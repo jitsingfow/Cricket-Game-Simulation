@@ -10,8 +10,8 @@ var Teams = function () {
     players.push(new Player(4, "Shashi Henra", [30, 25, 5, 0, 5, 1, 4, 30]));
 
     var teams = [];
-    teams.push(new Team(players, "Lengaburu"));
-    teams.push(new Team({}, "Enchai"));
+    teams.push(new Team(players, "Bengaluru"));
+    teams.push(new Team({}, "Chennai"));
 
     return teams;
 };
