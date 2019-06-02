@@ -1,0 +1,23 @@
+{
+  "name": "cricket-game-simulation",
+  "version": "1.0.0",
+  "description": "Cricket Game Simulation",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha **test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jitsingfow/Cricket-Game-Simulation.git"
+  },
+  "keywords": [
+    "nodejs",
+    "weighted random number generation"
+  ],
+  "author": "Nabajit Das",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jitsingfow/Cricket-Game-Simulation/issues"
+  },
+  "homepage": "https://github.com/jitsingfow/Cricket-Game-Simulation#readme"
+}
