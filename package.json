@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/jitsingfow/Cricket-Game-Simulation/issues"
   },
-  "homepage": "https://github.com/jitsingfow/Cricket-Game-Simulation#readme"
+  "homepage": "https://github.com/jitsingfow/Cricket-Game-Simulation#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
 }
