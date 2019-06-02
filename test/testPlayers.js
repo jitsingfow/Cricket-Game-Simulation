@@ -1,7 +1,6 @@
 var expect = require("chai").expect;
 
 var Player = require('../players/player');
-var Team = require('../players/team');
 
 describe("Tests Players Methods", function () {
 
@@ -9,6 +8,7 @@ describe("Tests Players Methods", function () {
 
         var probabilityDist = [4, 33, 22, 9, 17, 1, 10, 4];
         var runsPossibilities = [0, 1, 2, 3, 4, 5, 6, "out"];
+        var runsFor100Balls = [];
 
         var player = new Player(1, "Kirat Boli", probabilityDist);
 
@@ -22,7 +22,7 @@ describe("Tests Players Methods", function () {
         });
 
         it("Run result of a ball must be one of [0,1,2,3,4,5,6,'out']", function () {
-            expect(player.getRun).to.be.oneOf(runsPossibilities);
+            expect(player.getRuns()).to.be.oneOf(runsPossibilities);
         });
 
         it("Get a sample distribution", function () {
