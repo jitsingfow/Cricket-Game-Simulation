@@ -1,7 +1,7 @@
 var expect = require("chai").expect;
 
-var Teams = require('../simulator/simulateTeam');
-var Match = require('../simulator/simulateMatch');
+var Teams = require('../creator/createTeam');
+var Match = require('../creator/createMatch');
 
 describe("Tests Match Output", function () {
 
