@@ -6,7 +6,7 @@ var MatchSimulator = function (matchstat) {
 MatchSimulator.prototype.startMatch = function () {
 
     var matchstat = this.matchstat;
-    console.log(matchstat.totalBalls / 6 + " overs left. " + matchstat.target + " to win.");
+    console.log(matchstat.totalBalls / 6 + " over(s) left. " + matchstat.target + " to win.");
 
     while (matchstat.recquiredRuns > 0 && matchstat.balls < matchstat.totalBalls && matchstat.wickets < matchstat.team.players.length - 1) {
         var playerId = matchstat.team.currentPlayers[0].playerId;
@@ -23,12 +23,12 @@ MatchSimulator.prototype.startMatch = function () {
 
 MatchSimulator.printBallUpdates = function (matchstat) {
     var print = Math.floor(matchstat.balls / 6) + "." + (matchstat.balls % 6) + "  " + matchstat.currentPlayer.name;
-    print += (matchstat.currentRuns != "out") ? " scores " + matchstat.currentRuns + " runs " : " is out";
+    print += (matchstat.currentRuns != "out") ? " scores " + matchstat.currentRuns + " run(s) " : " is out";
 
     if (matchstat.balls % 6 == 0) {
         var remainingBalls = matchstat.totalBalls - matchstat.balls;
         var recquiredRuns = matchstat.recquiredRuns ? matchstat.recquiredRuns : " - ";
-        print += "\n" + remainingBalls / 6 + " overs left. " + recquiredRuns + " to win.";
+        print += "\n" + remainingBalls / 6 + " over(s) left. " + recquiredRuns + " to win.";
     }
 
     console.log(print);
