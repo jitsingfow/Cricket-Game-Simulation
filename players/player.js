@@ -26,7 +26,7 @@ Player.prototype.getRuns = function () {
     var cummDist = this.cummulativeDist;
     var random = Math.floor(Math.random() * 100);
     for (var i = cummDist.length - 1; i > 0; i--)
-        if (random < cummDist[i] && random > cummDist[i - 1])
+        if (random <= cummDist[i] && random > cummDist[i - 1])
             break;
     return Player.runsPossibilities[i];
 };
