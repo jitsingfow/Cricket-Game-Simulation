@@ -35,7 +35,7 @@ Team.prototype.updatePlayers = function (runs) {
 };
 
 Team.prototype.rotateStrike = function () {
-    this.currentPlayers[1] = [this.currentPlayers[0], this.currentPlayers[0] = this.currentPlayers[1]][0];
+    this.currentPlayers = [this.currentPlayers[1], this.currentPlayers[1]];
 };
 
 Team.prototype.resetTeamScores = function () {
