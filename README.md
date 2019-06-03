@@ -1,6 +1,7 @@
 # Cricket-Game-Simulation
 
-##Problem Statement
+## Problem Statement
+
 It's the finals of the T20 Cup! Bengaluru and Chennai, neighbours and fierce rivals, are fighting it out for the title. Bengaluru's star batsman Kirat is at the crease. Can he win it for Bengaluru? Write code to simulate the last 4 overs of the match. It's the last 4 overs of the match. Bengaluru needs 40 runs to win and with 3 wickets left. Each player has a different probability for scoring runs. Your coding problem is to simulate the match, ball by ball. The match simulation will require you to use a weighted random number generation based on probability to determine the runs scored per ball.
 
 <br />
@@ -35,7 +36,7 @@ Shashi Henra - 2* (2 balls)<br />
 ....1<br />
 
 
-#Implementation 
+## Implementation 
 
 Implemented using NodeJs
 
